@@ -161,6 +161,7 @@ module.exports = {
     'import/no-absolute-path': 'off',
 
     // Common
+    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'semi': ['error', 'never'],
     'curly': 'off',
     'quotes': ['error', 'single'],
@@ -226,8 +227,8 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'template-curly-spacing': 'error',
-    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
+    'template-curly-spacing': ['error', 'always'],
+    'arrow-parens': 'off',
     'generator-star-spacing': 'off',
     'spaced-comment': ['error', 'always', {
       line: {

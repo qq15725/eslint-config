@@ -14,6 +14,7 @@ module.exports = {
   },
   overrides: basic.overrides,
   rules: {
+    // Can't overload function exports with this enabled
     'import/named': 'off',
 
     // TS
