@@ -4,22 +4,22 @@ importers:
 
   .:
     specifiers:
-      '@antfu/eslint-config': '*'
+      '@qq15725/eslint-config': '*'
       bumpp: ^7.1.1
       eslint: ^8.14.0
-      eslint-plugin-antfu: workspace:*
+      eslint-plugin-qq15725: workspace:*
       typescript: ^4.6.4
     devDependencies:
-      '@antfu/eslint-config': link:packages/all
+      '@qq15725/eslint-config': link:packages/all
       bumpp: 7.1.1
       eslint: 8.14.0
-      eslint-plugin-antfu: link:packages/eslint-plugin-antfu
+      eslint-plugin-qq15725: link:packages/eslint-plugin-qq15725
       typescript: 4.6.4
 
   packages/all:
     specifiers:
-      '@antfu/eslint-config-react': workspace:*
-      '@antfu/eslint-config-vue': workspace:*
+      '@qq15725/eslint-config-react': workspace:*
+      '@qq15725/eslint-config-vue': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.22.0
       '@typescript-eslint/parser': ^5.22.0
       eslint: ^8.14.0
@@ -35,8 +35,8 @@ importers:
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
     dependencies:
-      '@antfu/eslint-config-react': link:../react
-      '@antfu/eslint-config-vue': link:../vue
+      '@qq15725/eslint-config-react': link:../react
+      '@qq15725/eslint-config-vue': link:../vue
       '@typescript-eslint/eslint-plugin': 5.22.0_as7czvxgrvaa35lzxztolpnp5a
       '@typescript-eslint/parser': 5.22.0_eslint@8.14.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.14.0
@@ -56,7 +56,6 @@ importers:
   packages/basic:
     specifiers:
       eslint: ^8.14.0
-      eslint-plugin-antfu: workspace:*
       eslint-plugin-eslint-comments: ^3.2.0
       eslint-plugin-html: ^6.2.0
       eslint-plugin-import: ^2.26.0
@@ -64,12 +63,12 @@ importers:
       eslint-plugin-markdown: ^2.2.1
       eslint-plugin-n: ^15.2.0
       eslint-plugin-promise: ^6.0.0
+      eslint-plugin-qq15725: workspace:*
       eslint-plugin-unicorn: ^42.0.0
       eslint-plugin-yml: ^0.14.0
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
     dependencies:
-      eslint-plugin-antfu: link:../eslint-plugin-antfu
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.14.0
       eslint-plugin-html: 6.2.0
       eslint-plugin-import: 2.26.0_eslint@8.14.0
@@ -77,6 +76,7 @@ importers:
       eslint-plugin-markdown: 2.2.1_eslint@8.14.0
       eslint-plugin-n: 15.2.0_eslint@8.14.0
       eslint-plugin-promise: 6.0.0_eslint@8.14.0
+      eslint-plugin-qq15725: link:../eslint-plugin-qq15725
       eslint-plugin-unicorn: 42.0.0_eslint@8.14.0
       eslint-plugin-yml: 0.14.0_eslint@8.14.0
       jsonc-eslint-parser: 2.1.0
@@ -84,7 +84,7 @@ importers:
     devDependencies:
       eslint: 8.14.0
 
-  packages/eslint-plugin-antfu:
+  packages/eslint-plugin-qq15725:
     specifiers:
       '@typescript-eslint/utils': ^5.22.0
       unbuild: ^0.7.4
@@ -97,13 +97,13 @@ importers:
 
   packages/react:
     specifiers:
-      '@antfu/eslint-config-ts': workspace:*
+      '@qq15725/eslint-config-ts': workspace:*
       eslint: ^8.14.0
       eslint-plugin-react: ^7.29.4
       react: ^18.1.0
       typescript: ^4.6.4
     dependencies:
-      '@antfu/eslint-config-ts': link:../typescript
+      '@qq15725/eslint-config-ts': link:../typescript
       eslint-plugin-react: 7.29.4_eslint@8.14.0
     devDependencies:
       eslint: 8.14.0
@@ -112,12 +112,12 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@antfu/eslint-config-basic': workspace:*
+      '@qq15725/eslint-config-basic': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.22.0
       '@typescript-eslint/parser': ^5.22.0
       eslint: ^8.14.0
     dependencies:
-      '@antfu/eslint-config-basic': link:../basic
+      '@qq15725/eslint-config-basic': link:../basic
       '@typescript-eslint/eslint-plugin': 5.22.0_as7czvxgrvaa35lzxztolpnp5a
       '@typescript-eslint/parser': 5.22.0_eslint@8.14.0
     devDependencies:
@@ -125,11 +125,11 @@ importers:
 
   packages/vue:
     specifiers:
-      '@antfu/eslint-config-ts': workspace:*
+      '@qq15725/eslint-config-ts': workspace:*
       eslint: ^8.14.0
       eslint-plugin-vue: ^8.7.1
     dependencies:
-      '@antfu/eslint-config-ts': link:../typescript
+      '@qq15725/eslint-config-ts': link:../typescript
       eslint-plugin-vue: 8.7.1_eslint@8.14.0
     devDependencies:
       eslint: 8.14.0
@@ -2509,7 +2509,7 @@ packages:
     hasBin: true
     dev: true
 
-  /mkdist/0.3.10_typescript@4.6.3:
+  /mkdist/0.3.10_typescript@4.6.4:
     resolution: {integrity: sha512-Aoc6hjILr2JPUJU2OUvBiD5sZ/CG1FeiXwk6KKPqE0iSTjBCrjrVK/fP5ig+TB3AKHvh2aA2QXXGeXVCJBdSwg==}
     hasBin: true
     peerDependencies:
@@ -2525,7 +2525,7 @@ packages:
       jiti: 1.13.0
       mri: 1.2.0
       pathe: 0.2.0
-      typescript: 4.6.3
+      typescript: 4.6.4
     dev: true
 
   /mlly/0.3.19:
@@ -2907,7 +2907,7 @@ packages:
       glob: 7.1.6
     dev: true
 
-  /rollup-plugin-dts/4.2.1_3zpigpz7crs5s43nhxirf6uitu:
+  /rollup-plugin-dts/4.2.1_plwr5wklsyx7vtrnyu6e5ywwli:
     resolution: {integrity: sha512-eaxQZNUJ5iQcxNGlpJ1CUgG4OSVqWjDZ3nNSWBIoGrpcote2aNphSe1RJOaSYkb8dwn3o+rYm1vvld/5z3EGSQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -2916,7 +2916,7 @@ packages:
     dependencies:
       magic-string: 0.26.1
       rollup: 2.70.1
-      typescript: 4.6.3
+      typescript: 4.6.4
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
@@ -3191,12 +3191,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /typescript/4.6.3:
-    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-    dev: true
-
   /typescript/4.6.4:
     resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
@@ -3235,7 +3229,7 @@ packages:
       jiti: 1.13.0
       magic-string: 0.26.1
       mkdirp: 1.0.4
-      mkdist: 0.3.10_typescript@4.6.3
+      mkdist: 0.3.10_typescript@4.6.4
       mlly: 0.5.2
       mri: 1.2.0
       pathe: 0.2.0
@@ -3243,10 +3237,10 @@ packages:
       pretty-bytes: 6.0.0
       rimraf: 3.0.2
       rollup: 2.70.1
-      rollup-plugin-dts: 4.2.1_3zpigpz7crs5s43nhxirf6uitu
+      rollup-plugin-dts: 4.2.1_plwr5wklsyx7vtrnyu6e5ywwli
       rollup-plugin-esbuild: 4.9.1_vioqp3gnyr4eeol67lf6zyna6a
       scule: 0.2.1
-      typescript: 4.6.3
+      typescript: 4.6.4
       untyped: 0.4.4
     transitivePeerDependencies:
       - supports-color

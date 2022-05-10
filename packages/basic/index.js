@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'antfu',
+    'qq15725',
   ],
   settings: {
     'import/resolver': {
@@ -305,9 +305,9 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
 
-    // antfu
-    'antfu/if-newline': 'error',
-    'antfu/import-dedupe': 'error',
-    // 'antfu/prefer-inline-type-import': 'error',
+    // qq15725
+    'qq15725/if-newline': 'error',
+    'qq15725/import-dedupe': 'error',
+    // 'qq15725/prefer-inline-type-import': 'error',
   },
 }
