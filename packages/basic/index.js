@@ -154,14 +154,15 @@ module.exports = {
   ],
   rules: {
     // import
-    'import/order': 'error',
+    'import/order': ['error', {
+      groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'],
+    }],
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
     'import/no-unresolved': 'off',
     'import/no-absolute-path': 'off',
 
     // Common
-    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'semi': ['error', 'never'],
     'curly': 'off',
     'quotes': ['error', 'single'],
