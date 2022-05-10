@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@qq15725/eslint-config': '*'
+      '@qq15725/eslint-config': workspace:*
       bumpp: ^7.1.1
       eslint: ^8.14.0
       eslint-plugin-qq15725: workspace:*

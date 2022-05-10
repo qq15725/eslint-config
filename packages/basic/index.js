@@ -162,7 +162,7 @@ module.exports = {
 
     // Common
     'semi': ['error', 'never'],
-    'curly': ['error', 'multi-or-nest', 'consistent'],
+    'curly': 'off',
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
     'no-unused-vars': 'warn',
@@ -306,8 +306,6 @@ module.exports = {
     'yml/no-empty-document': 'off',
 
     // qq15725
-    'qq15725/if-newline': 'error',
     'qq15725/import-dedupe': 'error',
-    // 'qq15725/prefer-inline-type-import': 'error',
   },
 }
