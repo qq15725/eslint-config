@@ -14,7 +14,7 @@
     "@qq15725/eslint-config": "workspace:*",
     "bumpp": "^7.1.1",
     "eslint": "^8.14.0",
-    "eslint-plugin-qq15725": "workspace:*",
+    "eslint-plugin-wxm": "workspace:*",
     "typescript": "^4.6.4"
   }
 }

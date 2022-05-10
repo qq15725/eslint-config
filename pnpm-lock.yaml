@@ -7,13 +7,13 @@ importers:
       '@qq15725/eslint-config': workspace:*
       bumpp: ^7.1.1
       eslint: ^8.14.0
-      eslint-plugin-qq15725: workspace:*
+      eslint-plugin-wxm: workspace:*
       typescript: ^4.6.4
     devDependencies:
       '@qq15725/eslint-config': link:packages/all
       bumpp: 7.1.1
       eslint: 8.14.0
-      eslint-plugin-qq15725: link:packages/eslint-plugin-qq15725
+      eslint-plugin-wxm: link:packages/eslint-plugin-wxm
       typescript: 4.6.4
 
   packages/all:
@@ -63,8 +63,8 @@ importers:
       eslint-plugin-markdown: ^2.2.1
       eslint-plugin-n: ^15.2.0
       eslint-plugin-promise: ^6.0.0
-      eslint-plugin-qq15725: workspace:*
       eslint-plugin-unicorn: ^42.0.0
+      eslint-plugin-wxm: workspace:*
       eslint-plugin-yml: ^0.14.0
       jsonc-eslint-parser: ^2.1.0
       yaml-eslint-parser: ^0.5.0
@@ -76,15 +76,15 @@ importers:
       eslint-plugin-markdown: 2.2.1_eslint@8.14.0
       eslint-plugin-n: 15.2.0_eslint@8.14.0
       eslint-plugin-promise: 6.0.0_eslint@8.14.0
-      eslint-plugin-qq15725: link:../eslint-plugin-qq15725
       eslint-plugin-unicorn: 42.0.0_eslint@8.14.0
+      eslint-plugin-wxm: link:../eslint-plugin-wxm
       eslint-plugin-yml: 0.14.0_eslint@8.14.0
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 0.5.0
     devDependencies:
       eslint: 8.14.0
 
-  packages/eslint-plugin-qq15725:
+  packages/eslint-plugin-wxm:
     specifiers:
       '@typescript-eslint/utils': ^5.22.0
       rimraf: ^3.0.2

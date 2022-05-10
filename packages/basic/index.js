@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'qq15725',
+    'wxm',
   ],
   settings: {
     'import/resolver': {
@@ -305,7 +305,7 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
 
-    // qq15725
-    'qq15725/import-dedupe': 'error',
+    // wxm
+    'wxm/import-dedupe': 'error',
   },
 }

@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-qq15725",
+  "name": "eslint-plugin-wxm",
   "version": "1.0.1",
   "license": "MIT",
   "main": "./dist/index.cjs",
