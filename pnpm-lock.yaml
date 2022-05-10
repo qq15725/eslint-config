@@ -20,6 +20,7 @@ importers:
     specifiers:
       '@qq15725/eslint-config-react': workspace:*
       '@qq15725/eslint-config-vue': workspace:*
+      '@qq15725/eslint-config-vue-jsx': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.22.0
       '@typescript-eslint/parser': ^5.22.0
       eslint: ^8.14.0
@@ -37,6 +38,7 @@ importers:
     dependencies:
       '@qq15725/eslint-config-react': link:../react
       '@qq15725/eslint-config-vue': link:../vue
+      '@qq15725/eslint-config-vue-jsx': link:../vue-jsx
       '@typescript-eslint/eslint-plugin': 5.22.0_as7czvxgrvaa35lzxztolpnp5a
       '@typescript-eslint/parser': 5.22.0_eslint@8.14.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.14.0
@@ -135,6 +137,21 @@ importers:
       eslint-plugin-vue: 8.7.1_eslint@8.14.0
     devDependencies:
       eslint: 8.14.0
+
+  packages/vue-jsx:
+    specifiers:
+      '@qq15725/eslint-config-ts': workspace:*
+      eslint: ^8.14.0
+      eslint-plugin-react: ^7.29.4
+      react: ^18.1.0
+      typescript: ^4.6.4
+    dependencies:
+      '@qq15725/eslint-config-ts': link:../typescript
+      eslint-plugin-react: 7.29.4_eslint@8.14.0
+    devDependencies:
+      eslint: 8.14.0
+      react: 18.1.0
+      typescript: 4.6.4
 
 packages:
 
