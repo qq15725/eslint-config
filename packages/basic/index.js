@@ -155,7 +155,7 @@ module.exports = {
   rules: {
     // import
     'import/order': ['error', {
-      groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'],
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
     }],
     'import/first': 'error',
     'import/no-mutable-exports': 'error',
