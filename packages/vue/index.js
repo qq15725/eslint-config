@@ -45,12 +45,11 @@ module.exports = {
       order: ['script', 'template', 'style'],
     }],
     // 组件名命名风格
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/component-name-in-template-casing': 'off',
     // 组件选项命名风格
-    'vue/component-options-name-casing': ['error', 'PascalCase'],
+    'vue/component-options-name-casing': 'off',
     // 自定义事件命名风格
-    // 'vue/custom-event-name-casing': ['error', 'camelCase'],
-    'vue/custom-event-name-casing': ['error', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
+    'vue/custom-event-name-casing': ['error', 'kebab-case', { ignores: ['/^[a-z]+(?:-[a-z]+)*:[a-z]+(?:-[a-z]+)*$/u'] }],
 
     // <template>
     // 关闭标签时换行
